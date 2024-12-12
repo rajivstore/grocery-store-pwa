@@ -50,7 +50,8 @@ Block: ${orderDetails.membershipType} - ${orderDetails.membershipValue}
 Flat: ${orderDetails.flat}
 `;
 
-    const whatsappUrl = `https://wa.me/+919908862141?text=${encodeURIComponent(
+    const whatsappContact = process.env.NEXT_PUBLIC_WHATSAPP_CONTACT;
+    const whatsappUrl = `https://wa.me/${whatsappContact}?text=${encodeURIComponent(
       fullOrderMessage
     )}`;
 

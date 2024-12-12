@@ -99,8 +99,6 @@ export default function Home() {
   useEffect(() => {
     fetchProducts();
   }, [fetchProducts]);
-
-  // const sendWhatsAppOrder = useCallback(() => {
   //   if (cartItems.length === 0) return;
 
   //   const orderText = cartItems
